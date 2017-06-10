@@ -12,5 +12,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    public void ShowText(View view) {
+        String msg ="เกรดเฉลี่ย 3.22!";
+        Toast toast =Toast.makeText(this, msg, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 
 }

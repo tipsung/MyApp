@@ -4,31 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/color"
+    android:background="@color/WhiteSmoke"
     tools:context="com.example.admin.myapp.MainActivity">
 
     <RelativeLayout
         android:layout_width="400dp"
         android:layout_height="600dp"
         tools:layout_editor_absoluteX="-8dp"
-        tools:layout_editor_absoluteY="-22dp">
+        tools:layout_editor_absoluteY="-31dp">
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="200dp"
             android:layout_height="150dp"
-            app:srcCompat="@drawable/my_tip"
-            android:layout_above="@+id/name"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="41dp" />
+            android:layout_marginTop="59dp"
+            app:srcCompat="@drawable/my_tip" />
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/age"
-            android:layout_alignStart="@+id/age"
-            android:layout_centerVertical="true"
+            android:layout_alignTop="@+id/imageView4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="180dp"
             android:text="ชื่อ นางสาวพจนา แก้วกำไร ชื่อเล่น ทิพย์"
             android:textSize="20dp" />
 
@@ -36,65 +36,45 @@
             android:id="@+id/age"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/brun"
-            android:layout_alignStart="@+id/brun"
             android:layout_below="@+id/name"
-            android:layout_marginTop="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
             android:text="รหัสนักศึกษา 59110640228 อายุ 21 ปี"
             android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="ประวัติส่วนตัว"
-            android:textSize="24dp"
-            android:layout_above="@+id/imageView4"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="26dp" />
 
         <TextView
             android:id="@+id/brun"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/name"
+            android:layout_alignStart="@+id/name"
             android:layout_below="@+id/age"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="15dp"
-            android:text="สาขาเทคโนโลยีสารสนเทศ ชั้นปี 3 ต่อเนื่อง"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/gpx"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/brun"
-            android:layout_alignStart="@+id/brun"
-            android:layout_below="@+id/brun"
-            android:layout_marginTop="14dp"
-            android:text="เกรดเฉลี่ย 3.22     กรุ๊ปเลือด B "
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/phone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/gpx"
-            android:layout_alignStart="@+id/gpx"
-            android:layout_below="@+id/gpx"
-            android:layout_marginTop="20dp"
-            android:text="เบอร์โทรศัพท์  063-0847155"
+            android:layout_marginTop="16dp"
+            android:text="สาขา IT  ชั้นปี 3 ต่อเนื่อง"
             android:textSize="20dp" />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/phone"
-            android:layout_alignStart="@+id/phone"
-            android:layout_below="@+id/phone"
-            android:layout_marginTop="17dp"
+            android:layout_marginTop="14dp"
             android:text="E-mail : photjjana.ke.59@ubu.ac.th"
-            android:textSize="20dp" />
+            android:textSize="20dp"
+            android:layout_below="@+id/brun"
+            android:layout_alignLeft="@+id/age"
+            android:layout_alignStart="@+id/age" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="34dp"
+            android:background="@color/Cyan"
+            android:text="ข้อมูลเพิ่มเติม"
+            android:textSize="20dp"
+            android:layout_below="@+id/email"
+            android:layout_centerHorizontal="true"
+            android:onClick="ShowText"/>
 
     </RelativeLayout>
 
